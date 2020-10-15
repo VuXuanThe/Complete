@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_cardview">
+
+        <TextView
+            android:id="@+id/tvOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Có 4 người đã ok"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:layout_margin="@dimen/_6sdp"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/colorBackground"
+            android:layout_below="@id/tvOK"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ý kiến"
+            android:layout_below="@id/view"
+            android:textColor="@color/red"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvListComment"
+            android:layout_margin="@dimen/_5sdp" />
+
+        <RelativeLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorWhite">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtComment"
+                android:background="@android:color/transparent"
+                android:hint="Type a idea..."
+                android:padding="@dimen/_4sdp"
+                android:layout_toLeftOf="@id/btnComment"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnComment"
+                android:background="@drawable/ic_send"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@color/green_right"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>

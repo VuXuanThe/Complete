@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gias">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".User.Chats.MesengerActivity"></activity>
+        <activity
+            android:name=".User.UserActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/UserTheme" />
+        <activity
+            android:name=".Main.HomeActivity"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main.MainActivity"
+            android:screenOrientation="nosensor" />
+
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="@string/APP_ID" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="@string/APP_CODE" />
+        <meta-data
+            android:name="com.here.android.maps.license.key"
+            android:value="@string/LISENCE_KEY" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-1144121897293340~8820120186"/>
+
+
+        <service
+            android:name="com.here.android.mpa.service.MapService"
+            android:exported="false"
+            android:label="com.here.android.example.autosuggest">
+            <intent-filter>
+                <action android:name="com.here.android.mpa.service.MapService.v3" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notifications.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Notifications.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

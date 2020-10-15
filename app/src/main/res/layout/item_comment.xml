@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/background"
+            android:layout_margin="@dimen/_3sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_3sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vu Xuan The"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dd/mm/yyyy"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="comment coment coment"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

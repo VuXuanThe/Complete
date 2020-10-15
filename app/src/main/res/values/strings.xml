@@ -1,0 +1,178 @@
+<resources>
+    <string name="app_name">Gia Sư</string>
+    <string name="logo">VT-Education</string>
+
+    ----------------Main-------------------
+    <string name="capacity_test">Kiểm Tra Năng Lực</string>
+    <string name="find_teacher">Tìm Gia Sư</string>
+    <string name="find_student">Tìm Học Sinh</string>
+    <string name="login">Đăng Nhập / Đăng Kí</string>
+    <string name="message_request_permission_read_phone_state">Chúng tôi cần cấp quyền để xác định thiết bị của bạn</string>
+
+    ----------------Login-------------------
+    <string name="number_phone">Số điện thoại</string>
+    <string name="code_OTP">Mã OTP</string>
+    <string name="resent_code_OTP">Lấy lại mã OTP</string>
+    <string name="Remember_Acount">Duy Trì Đăng Nhập</string>
+    <string name="Get_Code_OTP">Lấy Mã OTP</string>
+    <string name="Confirm">Xác Thực</string>
+    <string name="Notice">Chú ý: Nếu số điện thoại của bạn chưa đăng kí tài khoản thì hệ thống sẽ tiến hành tự động đăng kí và cập nhật thông tin cho bạn tại các bước sau.</string>
+    <string name="Error_Enter_OTP_Code">Bạn Chưa Nhập Đủ Mã OTP</string>
+    <string name="Error_CodeOTP_Length">Mã OTP Phải gồm 6 số</string>
+    <string name="Error_Dont_Enter_Phone_Number">Bạn Chưa Nhập Số Điện Thoại!</string>
+    <string name="Error_Phone_Number">Số Điện Thoại Không Hợp Lệ</string>
+    <string name="Auto_Confirm">Tự động xác nhận mã OTP</string>
+    <string name="Error">Đã Xảy Ra Lỗi, Vui Lòng Thử Lại Sau!</string>
+    <string name="Wrong_Code_OTP">Bạn Nhập Sai Mã OTP, Vui Lòng Nhập Lại!</string>
+    <string name="More_Code_OTP">Lấy Mã OTP Quá Số Lần Quy Định! Vui Lòng Thử Lại Sau!</string>
+    <string name="Notice_More_Code_OTP">Bạn Chỉ Được Lấy Lại Mã OTP Tối Đa 4 Lần!</string>
+    <string name="Auto_Login">Tự Động Đăng Nhập!</string>
+    <string name="Update_Infomation">Cập Nhật Thông Tin!</string>
+
+    ----------------Create Acount-------------------
+    <string name="full_name">Họ Và Tên</string>
+    <string name="Adress">Nhập Địa Chỉ</string>
+    <string name="Email">Email</string>
+    <string name="Gender">Giới Tính</string>
+    <string name="Age">Tuổi</string>
+    <string name="Male">Nam</string>
+    <string name="Female">Nữ</string>
+    <string name="Object">Bạn Là</string>
+    <string name="Teacher">Giáo viên / Gia Sư</string>
+    <string name="Student">Học Sinh / Phụ Huynh Học Sinh</string>
+    <string name="Company">Trung Tâm / Cơ Sở Giáo Dục</string>
+    <string name="Rules">Bạn đồng ý với các điều khoản của chúng tôi?</string>
+    <string name="Update">Cập Nhật</string>
+    <string name="Dont_This_Adress">Không Phải Địa Chỉ Này !</string>
+    <string name="Search">Tìm Kiếm</string>
+    <string name="Notice_Change_Adress">- Hãy nhập địa chỉ của bạn vào phần địa chỉ rồi nhấn vào nút tìm kiếm, vị trí khả dụng sẽ được hiện icon lên bản đồ,. Sau đó bạn click vào icon ứng với địa điểm đúng nhất\n- Nếu vị trí của bạn không khả dụng trên bản đồ thì hãy nhập một địa điểm khả dụng gần bạn nhất.</string>
+    <string name="Notice_Chose_Adress">Click vào icon trên bản đồ ứng với địa điểm của bạn.</string>
+    <string name="Error_Dont_Enter_Adress">Nhập địa chỉ của bạn hoặc click vào icon địa điểm tương ứng trên bản đồ!</string>
+    <string name="Error_Adress">Địa chỉ bạn nhập sai hoặc không tồn tại!</string>
+    <string name="Error_Dont_Enter_Name">Bạn Chưa Nhập Tên!</string>
+    <string name="Error_Dont_Enter_Email">Bạn Chưa Nhập Email!</string>
+    <string name="Error_Email">Email không hợp lệ!</string>
+    <string name="Error_Gender">Bạn chưa chọn giới tính!</string>
+    <string name="Error_Object">Bạn chưa chọn đối tượng tạo tài khoản!</string>
+    <string name="Error_Rules">Bạn chưa đồng ý với các điều khoản của chúng tôi!</string>
+    <string name="Error_Avatar">Bạn chưa chọn ảnh đại diện!</string>
+    <string name="Error_Age">Bạn chưa chọn tuổi</string>
+    <string name="Experient">Kinh Nghiệm</string>
+    <string name="Subject">Môn Dạy</string>
+    <string name="Subject_Student">Môn Cần Học</string>
+    <string name="Free_Time">Thời Gian Rảnh</string>
+    <string name="Tuition">Học Phí (1 tiếng)</string>
+    <string name="Vehicle">Phương tiện</string>
+    <string name="Process_work">Tóm Tắt Kinh Nghiệm</string>
+    <string name="Hint_Process_work">Nhập Tóm Tắt Kinh Nghiệm Tại Đây!</string>
+    <string name="Study">Lực Học</string>
+    <string name="Study_Subject">Môn Học</string>
+    <string name="Error_Dont_Enter_Subject">Bạn Chưa Nhập Môn Dạy</string>
+    <string name="Error_Dont_Enter_FreeTime">Bạn Chưa Chọn Thời Gian Rảnh</string>
+    <string name="Error_Dont_Chose_Experient">Bạn Chưa Chọn Kinh Nghiệm</string>
+    <string name="Error_Dont_Chose_Tuition">Bạn Chưa Chọn Học Phí</string>
+    <string name="Error_Dont_Chose_Vehicle">Bạn Chưa Chọn Phương Tiện</string>
+    <string name="Error_Dont_Enter_ProcessWork">Bạn Chưa Nhập Quá Trình Làm Việc</string>
+    <string name="Error_Dont_Chose_Study">Bạn Chưa Chọn Lực Học</string>
+
+    ----------------Location-------------------
+    <string name="Setting_GPS">Tiếp Theo</string>
+    <string name="Request_GPS">GPS không được bật. Bạn có muốn đi đến phần cài đặt?</string>
+    <string name="OK">Đồng ý</string>
+    <string name="Cancle">Hủy</string>
+
+    ----------------Map-------------------
+    <string name="engine_init_error">Lỗi Bản Đồ</string>
+
+    ----------------Map-------------------
+    <string name="gender">Giới Tính</string>
+    <string name="age">Tuổi</string>
+    <string name="ObjectUser">Đối Tượng</string>
+
+    ----------------Bottom Sheet-------------------
+    <string name="Information">Thông Tin</string>
+    <string name="Subject_Bottom_Sheet">Môn Dạy</string>
+    <string name="Gender_Bottom_Sheet">Giới Tính</string>
+    <string name="Age_Bottom_Sheet">Tuổi</string>
+    <string name="Detail_Bottom_Sheet">Chi Tiết</string>
+    <string name="Contact_Bottom_Sheet">Liên Hệ</string>
+    <string name="Direction_Bottom_Sheet">Chỉ Đường</string>
+
+    ----------------Dialog Contact-------------------
+    <string name="Dialog_Title">Liên Hệ</string>
+    <string name="Dialog_Mesage">Liên hệ để trao đổi thêm như địa chỉ hoặc số điện thoại</string>
+
+    ----------------Fragment Search In UserActivity-------------------
+    <string name="Find_Teache">Tìm Kiếm Gia Sư</string>
+    <string name="Details_Find_Teacher_1">Chế độ tìm kiếm gia sư theo dạng bản đồ và danh sách</string>
+    <string name="Find_Student">Tìm Kiếm Học Sinh</string>
+    <string name="Details_Find_Student_1">Chế độ tìm kiếm học sinh theo dạng bản đồ và danh sách</string>
+    <string name="Details_Find_Teacher_2">Chế độ tìm kiếm gia sư theo số điện thoại</string>
+    <string name="Details_Find_Student_2">Chế độ tìm kiếm học sinh theo số điện thoại</string>
+
+    ----------------Dialog logout in fragment Add details-------------------
+    <string name="logout">Đăng Xuất</string>
+    <string name="Mess_logout">Đăng xuất khỏi thiết bị đồng thời dữ liệu đang khởi tạo sẽ bị xóa!</string>
+
+    ----------------Fragment Chat-------------------
+    <string name="Chats">Nhắn Tin</string>
+    <string name="Search_Name">Nhập tên người dùng bạn tìm kiếm</string>
+    <string name="value">Kết quả</string>
+    <string name="Enter_Message">Nhập Tin Nhắn</string>
+    <string name="signout">Đăng Xuất và Chỉnh Sửa</string>
+    <string name="log_out">Đăng Xuất</string>
+    <string name="Mes_logout">Đăng xuất khỏi thiết bị này!</string>
+    <string name="Add_idea">Góp ý</string>
+    <string name="edit">Chỉnh sửa</string>
+    <string name="dismiss_menu">Ẩn Menu</string>
+    <string name="offline_ok">Tắt trò chuyện thành công!</string>
+
+    ----------------Menu in fragment user-------------------
+    <string name="repair">Cài đặt</string>
+    <string name="edit_in_menu">Chỉnh sửa</string>
+    <string name="Mes_edit_in_menu">Chỉnh sửa các thông tin cá nhân của bạn</string>
+    <string name="connect">Liên kết</string>
+    <string name="mes_connect">Hiển thị các tài khoản liên kết với tài khoản của bạn</string>
+    <string name="security">Bảo mật</string>
+    <string name="mes_security">Xác thực email của bạn để tăng thêm bảo mật tài khoản</string>
+    <string name="invite">Mời bạn bè</string>
+    <string name="mes_invite">Mời thêm bạn bè sử dụng ứng dụng</string>
+    <string name="change_language">Đổi ngôn ngữ</string>
+    <string name="mes_change_language">Đổi ngôn ngữ trên thiết bị của bạn</string>
+    <string name="logout_in_menu">Đăng xuất</string>
+    <string name="mes_logout_in_menu">Đăng xuất tài khoản khỏi thiết bị này</string>
+    <string name="help">Trợ giúp</string>
+    <string name="position">Địa điểm</string>
+    <string name="feedback">Phản hồi</string>
+    <string name="contact">Liên hệ</string>
+    <string name="qa">Hỏi đáp</string>
+
+    ----------------Connect Internet-------------------
+    <string name="mess">Thiết bị của bạn chưa kết nối internet! Vui lòng kiểm tra kết nối.</string>
+    <string name="title">Kết nối internet</string>
+    <string name="button_one">Kết nối</string>
+    <string name="button_two">Hủy</string>
+    <string name="mess_two">Ứng dụng tự động đóng do kết nối!</string>
+    <string name="ChoseStyleSearch"><![CDATA[Chọn chế độ tìm kiếm]]></string>
+    <string name="NewStudent"><![CDATA[Học Sinh cần tìm gia sư mới]]></string>
+    <string name="NewTeacher"><![CDATA[Gia sư cần tìm học sinh mới]]></string>
+    <string name="subject">Môn học</string>
+    <string name="subject_study">Môn dạy</string>
+
+
+    ----------------Feeling-------------------
+    <string name="feel">Cảm xúc</string>
+    <string name="happy">vui vẻ</string>
+    <string name="cute">đáng yêu</string>
+    <string name="sad">buồn</string>
+    <string name="angry">tức giận</string>
+    <string name="question">thắc mắc</string>
+    <string name="not_choose">Bỏ chọn</string>
+
+
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
+
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/bottomSheetSearch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottomsheet_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liên Kết"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/colorText"
+        android:drawableRight="@drawable/ic_cancle"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="#ECE7E7"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/border_search"
+        android:layout_margin="@dimen/_5sdp">
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:background="@color/glass"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:hint="Nhập số điện thoại tìm kiếm" />
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@drawable/ic_search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/black"
+            android:layout_marginRight="@dimen/_10sdp"/>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:padding="@dimen/_8sdp"
+        android:id="@+id/view_connect_student"
+        app:cardElevation="@dimen/_8sdp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/background_cardview">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatarConnectStudent"
+                android:layout_width="@dimen/_27sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_4sdp"
+                app:civ_border_color="@color/red"
+                app:civ_border_width="@dimen/_1sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_4sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/tvNameConnectStudent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:hint="user name"
+                        android:gravity="center"
+                        android:textStyle="italic|bold"
+                        android:textColor="@color/colorText"/>
+
+                    <ImageButton
+                        android:id="@+id/online"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/ic_online"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvObject"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:textSize="14sp"
+                        android:drawableLeft="@drawable/ic_person"/>
+
+                    <TextView
+                        android:id="@+id/tvGenderConnectStudent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:hint="Gender"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/_4sdp"
+                        android:drawableLeft="@drawable/ic_gender"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Kết nối"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chú ý: Khi bạn kết nối, ứng dụng sẽ gửi một thông báo yêu cầu đến tài khoản bạn gửi yêu cầu!"
+        android:padding="@dimen/_5sdp"
+        android:textSize="14sp"
+        android:textColor="@color/red"
+        android:textStyle="italic"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_350sdp"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

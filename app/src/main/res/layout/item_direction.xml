@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/_5sdp"
+    android:padding="@dimen/_5sdp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_next_direction"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"/>
+
+    <TextView
+        android:id="@+id/nameRoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#127FD5"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

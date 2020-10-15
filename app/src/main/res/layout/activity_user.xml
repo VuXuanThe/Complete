@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fullScreenActivityUser">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_cardview">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/containerUser"/>
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                app:layout_anchorGravity="start"
+                app:hideOnScroll="true"
+                app:fabAlignmentMode="center"
+                app:fabCradleMargin="@dimen/_8sdp"
+                app:fabCradleRoundedCornerRadius="@dimen/_15sdp"
+                app:contentInsetEnd="@dimen/_1sdp"
+                app:contentInsetStart="@dimen/_1sdp"
+                app:backgroundTint="@color/background_bottom_app_bar">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:weightSum="5"
+                    android:gravity="center"
+                    android:id="@+id/bottomAppBar">
+                    <ImageButton
+                        android:id="@+id/btnGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_defaut_group"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:tint="@color/red"/>
+                    <ImageButton
+                        android:id="@+id/btnSearch"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_defaut_search"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:tint="@color/red"/>
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:background="@android:color/transparent"/>
+                    <ImageButton
+                        android:id="@+id/btnMes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_defaut_messenger"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:tint="@color/red"/>
+                    <ImageButton
+                        android:id="@+id/btnInformationUser"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_defaut_person"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:tint="@color/red"/>
+                </LinearLayout>
+            </com.google.android.material.bottomappbar.BottomAppBar>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnEvaluate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_evaluate"
+                app:hideMotionSpec="@android:anim/fade_out"
+                app:maxImageSize="35dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_anchor="@id/bottomAppBar"
+                app:backgroundTint="@color/background_floating_bottom"
+                app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+
+
+
+
+</layout>

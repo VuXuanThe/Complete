@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_cardview">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logo"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold|italic"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#474545"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgAvatarStudent"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_margin="@dimen/_8sdp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_toRightOf="@id/imgAvatarStudent">
+
+                        <TextView
+                            android:id="@+id/tvNameStudent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:text="Học sinh" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#474545"/>
+
+                <TextView
+                    android:id="@+id/tvRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textStyle="italic"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quản lí các buổi học"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textSize="14sp"
+                    android:textStyle="italic"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvListManagerForStudent"
+                    android:layout_margin="@dimen/_2sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/tvAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:text="Bạn chưa liên kết với gia sư nào"
+                    android:layout_gravity="center"
+                    android:textStyle="italic"
+                    android:drawableTop="@drawable/ic_add_data"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:fab_addButtonSize="mini"
+            app:fab_addButtonColorNormal="@color/green"
+            app:fab_labelsPosition="left"
+            app:fab_labelStyle="@style/LabelStyle"
+            app:fab_expandDirection="down"
+            app:fab_addButtonPlusIconColor="@color/red"
+            app:fab_addButtonColorPressed="@color/green_right"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            app:fab_addButtonStrokeVisible="true">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnConnectNewTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_size="mini"
+                app:fab_title="Liên kết gia sư mới"
+                app:fab_colorNormal="@color/green"
+                app:fab_colorPressed="@color/green_right"
+                app:fabSize="mini"
+                app:fab_icon="@drawable/ic_person"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_size="mini"
+                app:fab_title="Cài đặt báo thức"
+                app:fab_colorNormal="@color/green"
+                app:fab_colorPressed="@color/green_right"
+                app:fabSize="mini"
+                app:fab_icon="@drawable/ic_notification"/>
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </FrameLayout>
+
+</layout>

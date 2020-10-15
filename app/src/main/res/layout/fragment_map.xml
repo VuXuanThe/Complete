@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_map">
+
+        <RelativeLayout
+            android:layout_margin="@dimen/_1sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/MapDirection"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edtAdress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/boder_search_direction"
+                android:layout_margin="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:hint="Nhập địa điểm bắt đầu"
+                android:textSize="14sp"
+                android:maxLines="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/boder_button">
+
+                <ImageButton
+                    android:id="@+id/btnCurrentPosition"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/ic_current_button" />
+
+                <ImageButton
+                    android:id="@+id/btnDirection"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/ic_direction" />
+
+                <ImageButton
+                    android:id="@+id/btnDitails"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:background="@drawable/ic_details_direction" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnSearchAdress"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/ic_search"
+                android:backgroundTint="@color/red"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_11sdp"/>
+        </RelativeLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "260933432500",
+    "firebase_url": "https://vt-education-e691f.firebaseio.com",
+    "project_id": "vt-education-e691f",
+    "storage_bucket": "vt-education-e691f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260933432500:android:0e35710252b4a5fa0253e1",
+        "android_client_info": {
+          "package_name": "com.example.gias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260933432500-08veqbr4avknskp9h1iujtvjouembdmr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gias",
+            "certificate_hash": "b0b193ec513e901315e977275e0002b2dbb06b37"
+          }
+        },
+        {
+          "client_id": "260933432500-sajgoi2suc1k4vbt733bphjt25bsq09h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVXg8BC30ggNa4jnSFSKWNRzvXblOxka8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260933432500-sajgoi2suc1k4vbt733bphjt25bsq09h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

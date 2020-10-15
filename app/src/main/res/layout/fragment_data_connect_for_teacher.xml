@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@drawable/header_background_profile">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_marginTop="@dimen/_60sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_detail_dataconect"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_back"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:backgroundTint="@color/black"/>
+
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgBehind"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_alignParentRight="true"
+                            app:civ_border_color="@color/colorWhite"
+                            app:civ_border_width="@dimen/_2sdp"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgFront"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_alignParentLeft="true"
+                            app:civ_border_color="@color/colorWhite"
+                            app:civ_border_width="@dimen/_2sdp"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorBackground"
+                        android:layout_margin="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thông tin"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="@dimen/_125sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Gia Sư"
+                                android:textStyle="italic"
+                                android:textColor="@color/red"
+                                android:textSize="16sp"
+                                android:layout_gravity="center_vertical"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/_15sdp"/>
+                            <TextView
+                                android:id="@+id/tvNameTeacher"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/glass"
+                                android:gravity="center"
+                                android:textColor="@color/colorText"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:textStyle="italic"
+                                android:layout_width="@dimen/_125sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Số điện thoại"
+                                android:textColor="@color/red"
+                                android:textSize="16sp"
+                                android:layout_gravity="center_vertical"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/_15sdp"/>
+                            <TextView
+                                android:id="@+id/tvPhoneTeacher"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/glass"
+                                android:textColor="@color/colorText"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:textStyle="italic"
+                                android:layout_width="@dimen/_125sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Học sinh"
+                                android:textColor="@color/red"
+                                android:textSize="16sp"
+                                android:layout_gravity="center_vertical"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/_15sdp"/>
+                            <TextView
+                                android:id="@+id/tvNameStudent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/glass"
+                                android:textColor="@color/colorText"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:textStyle="italic"
+                                android:layout_width="@dimen/_125sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Số Điện Thoại"
+                                android:textColor="@color/red"
+                                android:textSize="16sp"
+                                android:layout_gravity="center_vertical"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/_15sdp"/>
+                            <TextView
+                                android:id="@+id/tvPhoneStudent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/glass"
+                                android:textColor="@color/colorText"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:textStyle="italic"
+                                android:layout_width="@dimen/_125sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Môn học"
+                                android:textColor="@color/red"
+                                android:textSize="16sp"
+                                android:layout_gravity="center_vertical"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/_15sdp"/>
+                            <TextView
+                                android:id="@+id/tvSubject"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/glass"
+                                android:textColor="@color/colorText"
+                                android:textSize="14sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorBackground"
+                        android:layout_margin="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dữ liệu có thể thay đổi hàng ngày"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lưu ý: Mọi dữ liệu bạn thay đổi đều được gửi thông báo đến học sinh!"
+                        android:textStyle="italic"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textSize="12sp"
+                        android:textColor="@color/red"
+                        android:layout_gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp">
+                            <TextView
+                                android:id="@+id/textTuition"
+                                android:layout_width="@dimen/_125sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Học phí 1 buổi"
+                                android:textColor="@color/red"
+                                android:textSize="16sp"
+                                android:layout_gravity="center_vertical"/>
+                            <TextView
+                                android:id="@+id/tp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:layout_toRightOf="@id/textTuition"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/_15sdp"/>
+                            <EditText
+                                android:id="@+id/edtTuition"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/glass"
+                                android:layout_toRightOf="@id/tp"
+                                android:inputType="number"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:textColor="@color/colorText"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:id="@+id/btnConfirmTuition"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/button"
+                                android:text="Xác nhận"
+                                android:textColor="@color/black"
+                                android:layout_centerVertical="true"
+                                android:paddingLeft="@dimen/_4sdp"
+                                android:paddingRight="@dimen/_4sdp"
+                                android:visibility="gone"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/textNumsessions"
+                                android:layout_width="@dimen/_125sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Số buổi đã học"
+                                android:textColor="@color/red"
+                                android:textSize="16sp"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"/>
+                            <TextView
+                                android:id="@+id/tpN"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/textNumsessions"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/_15sdp"/>
+                            <TextView
+                                android:id="@+id/tvNumSessions"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_45sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/glass"
+                                android:layout_toRightOf="@id/tpN"
+                                android:textColor="@color/colorText"
+                                android:textSize="14sp"/>
+
+                            <ImageButton
+                                android:id="@+id/btnAddOneNumsessions"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:background="@drawable/ic_add_one"
+                                android:layout_alignParentRight="true"
+                                android:backgroundTint="@color/black"/>
+
+                            <ImageButton
+                                android:id="@+id/btnDeviceNumSessions"
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:background="@drawable/ic_device_one"
+                                android:layout_toLeftOf="@id/btnAddOneNumsessions"
+                                android:backgroundTint="@color/black"
+                                android:layout_marginRight="@dimen/_15sdp"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textAlltuition"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Học phí: "
+                                android:layout_alignParentBottom="true"
+                                android:textStyle="italic"
+                                android:textColor="@color/red"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="@dimen/_10sdp"/>
+
+                            <TextView
+                                android:id="@+id/tvAllTuition"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1200000"
+                                android:layout_toRightOf="@id/textAlltuition"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_alignParentBottom="true"
+                                android:textSize="14sp"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/textComfirm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/red"
+                                android:text="Xác nhận đóng học phí"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:textSize="16sp"
+                                android:layout_marginRight="@dimen/_5sdp"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvNoticeConfirmUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:textColor="@color/red"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorBackground"
+                        android:layout_margin="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lịch sử thay đổi"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvHistory"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"/>
+
+                </LinearLayout>
+        </FrameLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+
+</layout>

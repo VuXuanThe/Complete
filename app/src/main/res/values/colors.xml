@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#51C131</color>
+    <color name="colorAccent">#DA0315</color>
+    <color name="red">#DA0315</color>
+    <color name="crystal">#52FFEB3B</color>
+    <color name="green">#65CD30</color>
+    <color name="green_right">#3EA608</color>
+    <color name="colorText">#000000</color>
+    <color name="crystalLight">#63000000</color>
+    <color name="orange">#FF5722</color>
+    <color name="black">#000000</color>
+    <color name="glass">#00000000</color>
+    <color name="background_bottom_app_bar">#E665CD30</color>
+    <color name="background_floating_bottom">#DCDA0315</color>
+
+    //color profile user
+    <color name="colorPrimaryProfilr">#20A9FF</color>
+    <color name="colorPrimaryDarkProfile">#3700B3</color>
+    <color name="colorAccentProfile">#FF2020</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBackground">#E3DEDE</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+
+</resources>

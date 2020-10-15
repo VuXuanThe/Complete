@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBackground">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/border_map">
+            <Button
+                android:id="@+id/btnNearTeacher"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Bản Đồ"
+                android:textAllCaps="false"
+                android:layout_margin="@dimen/_1sdp"/>
+            <Button
+                android:id="@+id/btnListTeacher"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_1sdp"
+                android:text="Danh Sách"
+                android:textAllCaps="false" />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                tools:listitem="@android:layout/simple_selectable_list_item"/>
+
+            <RelativeLayout
+                android:id="@+id/mapfragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_map"
+                android:padding="@dimen/_1sdp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:background="@drawable/boder_button">
+
+                    <ImageButton
+                        android:id="@+id/btnCurrentPosition"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/ic_current_button" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Load"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/crystalLight">
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

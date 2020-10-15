@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/bottomSheetRoad"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottomsheet_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Information"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/colorText"
+        android:drawableRight="@drawable/ic_cancle"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/red"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Độ dài quảng đường"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/lengRoad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Từ địa điểm bắt đầu"
+        android:textColor="@color/red"
+        android:textStyle="italic"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvRoadName"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_20sdp"/>
+
+</LinearLayout>

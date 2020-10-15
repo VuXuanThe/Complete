@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:id="@+id/container">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:background="@drawable/logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/logo"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_35sdp"
+                            android:textStyle="bold|italic" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/viewCapacityTest"
+                        android:layout_width="@dimen/_270sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:background="@drawable/boder_button"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/ic_test" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:gravity="center_horizontal"
+                            android:text="@string/capacity_test"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/ic_next" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/viewFindTeacher"
+                        android:layout_width="@dimen/_270sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/boder_button"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_12sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/find_teacher" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:gravity="center_horizontal"
+                            android:text="@string/find_teacher"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_next" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/viewFindStudent"
+                        android:layout_width="@dimen/_270sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/boder_button"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_12sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/find_class" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:gravity="center_horizontal"
+                            android:text="@string/find_student"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_next" />
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btnLogin"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:text="@string/login"
+                        android:textAllCaps="false"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_12sdp" />
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Load"
+            android:background="@color/crystalLight"
+            android:visibility="gone">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+</layout>
